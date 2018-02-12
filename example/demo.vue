@@ -1,21 +1,39 @@
 <template>
   <div class="page-demo">
-    <comp></comp>
+    <div class="box" v-scroll-fixed>
+      1
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
   </div>
 </template>
 
 <script>
-import Comp from '../src/component'
-
 export default {
-  name: 'Demo',
-
-  components: { Comp }
+  name: 'Demo'
 }
 </script>
 
-<style lang="less">
+<style lang="scss">
 body {
-  color: blue;
+  margin: 0;
+}
+.page-demo {
+  height: 2000px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(200, 200, 200, .6);
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.scroll-box {
+  width: 300px;
+  height: 100px;
+  overflow: auto;
+  border: 1px solid red;
 }
 </style>

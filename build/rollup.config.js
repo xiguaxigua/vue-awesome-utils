@@ -34,13 +34,16 @@ compList.forEach(item => {
 
   rollup.rollup({
     input: item.entry,
-    external: ['element-ui'],
+    external: ['vue'],
     plugins
   }).then(bundle => {
     bundle.write({
       format: item.type,
       name: item.name,
-      file: item.dist
+      file: item.dist,
+      globals: {
+        'vue': 'Vue'
+      }
     })
   }).catch((e) => {
     console.log(e)

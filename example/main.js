@@ -3,6 +3,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Demo from './demo'
 
+import Page from './page'
+
+import '../src/scroll-fixed'
+import '../src/scroll-lock'
+
 Vue.use(Router)
 
 const router = new Router({
@@ -11,6 +16,11 @@ const router = new Router({
       path: '/',
       name: 'vue-tiny-dropdown',
       component: Demo
+    },
+    {
+      path: '/page',
+      name: 'page',
+      component: Page
     }
   ]
 })

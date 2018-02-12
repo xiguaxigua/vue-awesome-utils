@@ -1,39 +1,34 @@
 module.exports = [
   {
-    entry: 'src/index.es.js',
-    dist: 'lib/index.esm.js',
+    entry: 'src/scroll-lock.js',
+    dist: 'lib/scroll-lock.esm.js',
     type: 'es',
-    min: false,
-    css: 'lib/style.css'
+    min: false
   },
   {
-    entry: 'src/index.js',
-    dist: 'lib/index.common.js',
+    entry: 'src/scroll-lock.js',
+    dist: 'lib/scroll-lock.common.js',
     type: 'cjs',
-    min: false,
-    css: 'lib/style.css'
+    min: false
   },
   {
-    entry: 'src/index.js',
-    dist: 'lib/index.common.min.js',
+    entry: 'src/scroll-lock.js',
+    dist: 'lib/scroll-lock.common.min.js',
     type: 'cjs',
-    min: true,
-    css: 'lib/style.min.css'
+    min: true
   },
   {
-    entry: 'src/index.js',
-    dist: 'lib/index.js',
+    entry: 'src/scroll-lock.js',
+    dist: 'lib/scroll-lock.js',
     type: 'umd',
     min: false,
-    css: 'lib/style.css',
     name: 'componentGlobalName'
   },
   {
-    entry: 'src/index.js',
-    dist: 'lib/index.min.js',
+    entry: 'src/scroll-lock.js',
+    dist: 'lib/scroll-lock.min.js',
     type: 'umd',
     min: true,
-    css: 'lib/style.min.css',
     name: 'componentGlobalName'
   }
 ]
